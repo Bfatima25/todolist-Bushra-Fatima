@@ -1,9 +1,11 @@
 import React from 'react';
+import DoList from './DoList';
 
 function ToDoList () {
     return (
         <div className="dolist-container">
-            <ul className="do-list"></ul>
+            <ul className="todo-list"></ul>
+            <DoList />
         </div>
     );
 };

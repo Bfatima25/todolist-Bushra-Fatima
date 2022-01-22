@@ -18,7 +18,7 @@ function FormToDo ({setInputText, dolist, setDolist, inputText}) {
                 <i className="fas fa-plus-circle"></i>
             </button>
             <div className="select">
-                <select name="dolist" className="filter-dolist">
+                <select name="list" className="filter-dolist">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="incomplete">InComplete</option>
