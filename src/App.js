@@ -5,12 +5,14 @@ import ToDoList from "./Components/ToDoList";
 
 function App() {
   return (
-    <div className="ToDoList-app">
+    <div className="ToDolist">
       <header>
         <h1>What's The Plan Today?</h1>
       </header>
+      <FormToDo />
+      <ToDoList />
     </div>
   );
 }
 
-export default ToDoList-app;
+export default App;
