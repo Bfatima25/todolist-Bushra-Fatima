@@ -4,8 +4,6 @@ import FormToDo from "./Components/FormToDo";
 import ToDoList from "./Components/ToDoList";
 
 function App() {
-  const [inputText, setInputText] = useState("");
-  const [todolist, setTodolist] = useState([]);
   return (
     <div className="ToDoList-app">
       <header>
@@ -15,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default ToDoList-app;
