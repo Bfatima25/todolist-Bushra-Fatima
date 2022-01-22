@@ -1,13 +1,13 @@
 import React from 'react';
 
-function FormToDo ({setInputText, dolist, setDolist, inputText}) {
+function FormToDo ({setInputText, doslist, setDolist, inputText}) {
     const inputDoHandler = (e) => {
         setInputText(e.target.value);
     };
     const submitDoHandler  = (e) => {
         e.preventDefault();
         setDolist([
-            ...dolist, {text: inputText, completed: false, id: Math.random()*1000 },
+            ...doslist, {text: inputText, completed: false, id: Math.random()*1000 },
         ]);
         setInputText("");
     };
