@@ -1,10 +1,16 @@
 import React from 'react';
 
-function FormToDo () {
+function FormToDo ({setInputText}) {
+    const inputDoHandler = (e) => {
+        setInputText(e.target.value);
+    };
+    const submitDoHandler  = (e) => {
+        e.preventDefault();
+    }
     return(
         <form>
-            <input type="text" className="dolist-input" />
-            <button className="dolist-button" type="submit">
+            <input onChange={inputDoHandler} type="text" className="dolist-input" />
+            <button onClick={submitDoHandler} className="dolist-button" type="submit">
                 <i className="fas fa-plus-circle"></i>
             </button>
             <div className="select">
