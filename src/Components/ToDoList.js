@@ -1,11 +1,14 @@
 import React from 'react';
 import DoList from './DoList';
 
-function ToDoList () {
+function ToDoList ({ dolist }) {
     return (
         <div className="dolist-container">
-            <ul className="todo-list"></ul>
-            <DoList />
+            <ul className="todo-list">
+                {dolist.map((dolist) => (
+                    <DoList text={dolist.text} id={dolist.id} />
+                ))}
+            </ul>
         </div>
     );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function DoList () {
+function DoList ({text}) {
     return(
         <div className="DoList">
-            <li className="DoList-item"></li>
+            <li className="DoList-item">{text}</li>
             <button className="checklist-btn">
                 <i className="fas fa-check-square"></i>
             </button>
