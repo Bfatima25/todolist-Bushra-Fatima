@@ -11,12 +11,6 @@ function App() {
       <header>
         <h1>What's The Plan Today?</h1>
       </header>
-      <FormToDo 
-        inputText={inputText} 
-        todolist={todolist} 
-        setTodolist={setTodolist} 
-        setInputText={setInputText} />
-      <ToDoList setTodolist={setTodolist} todolist={todolist} />
     </div>
   );
 }
