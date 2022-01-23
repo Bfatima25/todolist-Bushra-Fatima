@@ -11,6 +11,9 @@ function FormToDo ({setInputText, doslist, setDolist, inputText}) {
         ]);
         setInputText("");
     };
+    const statusHandler = (e) => {
+        setStatus(e.target.value);
+    };
     return(
         <form>
             <input value={inputText} onChange={inputDoHandler} type="text" className="dolist-input" />
@@ -18,7 +21,7 @@ function FormToDo ({setInputText, doslist, setDolist, inputText}) {
                 <i className="fas fa-plus-circle"></i>
             </button>
             <div className="select">
-                <select name="list" className="filter-dolist">
+                <select onChange={statusHandler} name="list" className="filter-dolist">
                     <option value="all">All</option>
                     <option value="completed">Completed</option>
                     <option value="incomplete">InComplete</option>
