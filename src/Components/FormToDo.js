@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FormToDo ({setInputText, doslist, setDolist, inputText}) {
+function FormToDo ({setInputText, doslist, setDolist, inputText, setStatus}) {
     const inputDoHandler = (e) => {
         setInputText(e.target.value);
     };
