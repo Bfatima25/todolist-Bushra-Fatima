@@ -35,7 +35,7 @@ function App() {
         <h1>What's The Plan Today?</h1>
       </header>
       <FormToDo inputText={inputText}  doslist={doslist} setDolist={setDolist} setInputText={setInputText} setStatus={setStatus} />
-      <ToDoList setDolist={setDolist} doslist={doslist} />
+      <ToDoList setDolist={setDolist} doslist={doslist} filteredDoslist={filteredDoslist} />
     </div>
   );
 }

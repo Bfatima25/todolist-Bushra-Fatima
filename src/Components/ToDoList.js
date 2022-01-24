@@ -1,7 +1,7 @@
 import React from 'react';
 import DoList from './DoList';
 
-function ToDoList ({ doslist, setDolist }) {
+function ToDoList ({ doslist, setDolist, filteredDoslist }) {
     return (
         <div className="dolist-container">
             <ul className="todo-list">
