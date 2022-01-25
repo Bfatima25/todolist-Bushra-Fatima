@@ -19,10 +19,10 @@ function App() {
   const filterHandler = () => {
     switch (status) {
       case 'completed':
-        setFilteredDoslist(doslist.filter(dolist => dolist.completed === true));
+        setFilteredDoslist(doslist.filter((dolist) => dolist.checked === true));
         break;
       case 'incomplete':
-        setFilteredDoslist(doslist.filter(dolist => dolist.completed === false));
+        setFilteredDoslist(doslist.filter((dolist) => dolist.completed === false));
         break;
       default:
         setFilteredDoslist(doslist);

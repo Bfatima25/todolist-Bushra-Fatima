@@ -5,7 +5,7 @@ function ToDoList ({ doslist, setDolist, filteredDoslist }) {
     return (
         <div className="dolist-container">
             <ul className="todo-list">
-                {doslist.map((dolist) => (
+                {filteredDoslist.map((dolist) => (
                     <DoList dolist={dolist} doslist={doslist} setDolist={setDolist} key={dolist.id} text={dolist.text} />
                 ))}
             </ul>

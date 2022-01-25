@@ -8,7 +8,7 @@ body {
   background: linear-gradient(#e66465, #9198e5);
 }
 header {
-  font-size: 2em;
+  font-size: 50px;
   font-family: 'Playfair Display', serif;
 }
 header, 
@@ -106,7 +106,7 @@ form button:hover {
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 320px) {
+/*@media all and (max-width: 320px) {
   header {
     font-size: 9px;
     justify-content: center;
@@ -153,4 +153,4 @@ form button:hover {
     font-size: 15px;
     width: 13vh;
   }
-}
+}*/
