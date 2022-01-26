@@ -8,7 +8,7 @@ body {
   background: linear-gradient(#e66465, #9198e5);
 }
 header {
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Playfair Display', serif;
 }
 header, 
@@ -25,7 +25,7 @@ form button {
   background: white;
 	font-family: Helvetica, sans-serif;
 	border: none;
-	border-radius: 17px 0 0 20px;
+	border-radius: 20px 0 0 20px;
 }
 form button {
 	color: #07124d;
@@ -64,8 +64,12 @@ form button:hover {
   align-items: center;
   cursor: pointer;
   border: 0;
-	border-radius: 10px 20px 15px 0;
+	border-radius: 20px 20px 20px 20px;
   padding: 0.5rem;
+  width: 20vh;
+  font-weight: bold;
+  position: relative;
+  right: -2vh;
   font-size: 1rem;
 }
 .todo-list {
@@ -87,7 +91,7 @@ form button:hover {
 }
 .deletelist-btn,
 .checklist-btn {
-  background: #ff6f47;
+  background: #951b13;
   color: white;
   border: none;
   padding: 1rem;
@@ -95,7 +99,7 @@ form button:hover {
   font-size: 1rem;
 }
 .checklist-btn {
-  background: rgb(11, 212, 162);
+  background: rgb(52, 153, 91);
 }
 .DoList-item {
   padding: 0rem 0.5rem;
@@ -105,52 +109,50 @@ form button:hover {
   opacity: 0.5;
 }
 
-/* MEDIA QUERIES */
-/*@media all and (max-width: 320px) {
+@media (min-width: 52px) 
+and (max-width: 320px) {
   header {
-    font-size: 9px;
+    font-size: 25px;
+    text-align: center;
     justify-content: center;
   }
   form input,
   form button {
-      padding: 0.5rem;
-      font-size: 1rem;
-      width: 25vh;
-      position: relative;
-      right: -8vh;
-      margin-top: -120px;
+    width: 25vh;
+    position: relative;
+    right: -12vh;
   }
   form button {
-    width: 5vh;
+    width: 15vh;
   }
   .filter-dolist {
-    padding: 0.5rem;
-    font-size: 10px;
-    width: 20vh;
     position: relative;
-    bottom: -7vh;
-    left: -15vh;
-    border-radius: 20px;
-    margin-top: -80px;
+    bottom: -10vh;
+    justify-content: center;
+    right: 15vh;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 321px) 
+and (max-width: 768px) {
   header {
-    font-size: 15px; }
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+  }
   form input,
   form button {
-      padding: 1rem;
-      font-size: 1rem;
-      border: none;
-      width: 29vh;
+    width: 35vh;
+    position: relative;
+    right: -10vh;
+    justify-content: center;
   }
   form button {
-    width: 9vh;
+    width: 10vh;
   }
   .filter-dolist {
-    padding: 0.3rem;
-    font-size: 15px;
-    width: 13vh;
+    position: relative;
+    bottom: -10vh;
+    left: -25vh;
   }
-}*/
+}
